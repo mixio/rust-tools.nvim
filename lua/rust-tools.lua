@@ -63,6 +63,16 @@ local function setup_commands()
 				require("rust-tools/code_action_group").code_action_group()
 			end,
 		},
+        RustMatchingBrace = {
+            function()
+                require("rust-tools/matching_brace").matching_brace()
+            end
+        },
+        RustOnEnter = {
+            function()
+                require("rust-tools/on_enter").on_enter()
+            end
+        },
 	})
 end
 
